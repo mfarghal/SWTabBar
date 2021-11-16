@@ -1,0 +1,16 @@
+PODS:
+  - SWTabBar (0.1.0)
+
+DEPENDENCIES:
+  - SWTabBar (from `../`)
+
+EXTERNAL SOURCES:
+  SWTabBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SWTabBar: 7c6ebaa1bc5d32179c99253ebe7e2f8c2a87a118
+
+PODFILE CHECKSUM: 469cc314570ca4124233b39bade34ab54b6698c9
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,22 @@
+{
+  "name": "SWTabBar",
+  "version": "0.1.0",
+  "summary": "A short description of SWTabBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mfarghal/SWTabBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mfarghal": "m.farghal.a@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mfarghal/SWTabBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SWTabBar/Classes/**/*"
+}

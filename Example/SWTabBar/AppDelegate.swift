@@ -7,15 +7,52 @@
 //
 
 import UIKit
+import SWTabBar
+import Pods_SWTabBar_Example
+
+class CustomNavigationController: UINavigationController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    let titles = ["Home", "Trending", "Subscriptions", "Account"]
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+        window?.rootViewController = CustomNavigationController(rootViewController: SWTabBarController(collectionViewLayout: layout))
+        
+//        UINavigationBar.appearance().barTintColor =
+//            UIColor.rgb(red: 230, green: 32, blue: 31)
+        
+        //        application.statusBarStyle = .lightContent
+        
+        let statusBarBackgroundView = UIView()
+//        statusBarBackgroundView.backgroundColor = UIColor.rgb(red: 194, green: 31, blue: 31)
+        
+        window?.addSubview(statusBarBackgroundView)
+//        window?.addConstraintsWithFormat("H:|[v0]|", views: statusBarBackgroundView)
+        let height = application.statusBarFrame.height
+//        window?.addConstraintsWithFormat("V:|[v0(\(height))]", views: statusBarBackgroundView)
+        
+//        window = UIWindow()
+//        window?.rootViewController = SWTabBarController()
+//        window?.makeKeyAndVisible()
+        
         return true
     }
 

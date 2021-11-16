@@ -1,0 +1,6 @@
+framework module SWTabBar {
+  umbrella header "SWTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}
